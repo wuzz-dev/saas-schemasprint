@@ -143,3 +143,23 @@ The included GitHub Actions workflow builds the app and uploads the `dist/` arti
 - Output directory: `dist`
 
 Serverless endpoints under `api/` follow Vercel-style handlers and can be adapted to other providers.
+
+## Analytics Snippet
+
+Add a privacy-friendly analytics provider after replacing the domain:
+
+```html
+<script defer data-domain="schemasprint.example.com" src="https://plausible.io/js/script.js"></script>
+```
+
+For Umami, use the hosted script URL and website ID from your Umami project instead.
+
+## Launch Checklist
+
+- Publish the production URL and verify Open Graph previews with LinkedIn, X/Twitter, and Slack.
+- Launch on Product Hunt with sample schema exports for a dentist, restaurant, and home-services business.
+- Post an Indie Hackers teardown of why local businesses still ship incomplete structured data.
+- Share a free local schema audit checklist in relevant Reddit SEO/local-business communities before linking the app.
+- Announce on X/Twitter with screenshots of the validation score, warnings, and export handoff.
+- Create comparison pages for free schema generators versus implementation-ready schema packs.
+- Install Plausible or Umami and track `demo_started`, `schema_generated`, `warning_resolved`, `export_downloaded`, and `plan_upgraded` events.
